@@ -50,11 +50,10 @@ header{
 }
 
 .menu a{
-    color: #0D0D0D;
+    color: #404040;
     font-size: 22px;
     text-decoration: none;
     margin-right: 20px;
-    border-bottom: solid #0D0D0D;
 }
 
 .menu a:hover{
@@ -65,12 +64,14 @@ header{
 .menu .btn-contact{
     background-color: #0777E3;
     padding: 6px 12px;
-    color: #0D0D0D;
+    color: #D9D9D9;
     border-radius: 8px;
+    border: #0777E3;
+    border-bottom: solid #404040;
 }
 
 .menu .btn-contact:hover{
-    background-color: #0D0D0D;
+    background-color: #bbbbc0;
     color: #0777E3;
 }
 
@@ -133,19 +134,21 @@ section.main{
 }
 
 .introduction button{
-    background-color: #D9D9D9;
+    background-color: #0777E3;
     display: inline-block;
     padding: 8px 30px;
-    color: #0777E3;
+    color: #D9D9D9;
     border-radius: 6px;
     font-size: 16px;
     border: 0;
     cursor: pointer;
+    border-bottom: solid #404040;
 }
 
 .introduction button:hover{
-    background-color: #0D0D0D;
+    background-color: #bbbbc0;
     color: #0777E3;
+    border-bottom: solid #0777E3;
 }
 
 .about{
@@ -231,14 +234,14 @@ section.my-works{
 }
 
 .my-work-single img{
-    filter: grayscale(100%);
+    filter: grayscale(0);
     transform: scale(1,1);
     transition: 1s;
 }
 
 .my-work-single img:hover{
     transform: scale(1.1,1.1);
-    filter: grayscale(0);
+    filter: grayscale(100%);
 }
 
 /*FOOTER*/
@@ -257,6 +260,23 @@ footer h2{
     padding-top: 20px;
     text-align: center;
     font-size: 50px;
+}
+
+#facebook:hover{
+    transform: scale(1.1,1.1);
+    forced-color-adjust: #0777E3;
+}
+
+#insta:hover{
+    transform: scale(1.1,1.1);
+}
+
+#git:hover{
+    transform: scale(1.1,1.1);
+}
+
+#mail:hover{
+    transform: scale(1.1,1.1);
 }
 
 .copyright{
